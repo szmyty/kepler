@@ -41,11 +41,12 @@
   "dependencies": {
     "@heroicons/react": "2.2.0",
     "react": "19.0.0",
-    "react-dom": "19.0.0"
+    "react-dom": "19.0.0",
+    "react-router-dom": "^7.0.2"
   },
   "devDependencies": {
-    "@eslint/js": "9.17.0",
     "@commitlint/cli": "19.6.1",
+    "@eslint/js": "9.17.0",
     "@tailwindcss/forms": "0.5.9",
     "@types/react": "19.0.2",
     "@types/react-dom": "19.0.2",
