@@ -10,9 +10,6 @@
   },
   "author": "",
   "license": "MIT",
-  "bugs": {
-    "url": ""
-  },
   "keywords": [
     "react",
     "vite",
@@ -39,17 +36,56 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@carto/toolkit": "0.0.1-rc.1",
     "@heroicons/react": "2.2.0",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
-    "react-router-dom": "^7.0.2"
+    "@kepler.gl/actions": "3.1.0-alpha.1",
+    "@kepler.gl/cloud-providers": "3.1.0-alpha.1",
+    "@kepler.gl/components": "3.1.0-alpha.1",
+    "@kepler.gl/constants": "3.1.0-alpha.1",
+    "@kepler.gl/processors": "3.1.0-alpha.1",
+    "@kepler.gl/reducers": "3.1.0-alpha.1",
+    "@kepler.gl/schemas": "3.1.0-alpha.1",
+    "@kepler.gl/styles": "3.1.0-alpha.1",
+    "@kepler.gl/utils": "3.1.0-alpha.1",
+    "@langchain/core": "0.3.17",
+    "@loaders.gl/arrow": "^3.4.13",
+    "@loaders.gl/core": "3.4.13",
+    "@loaders.gl/csv": "^3.4.13",
+    "@loaders.gl/gltf": "3.4.13",
+    "@loaders.gl/images": "3.4.13",
+    "@loaders.gl/json": "^3.4.13",
+    "@loaders.gl/parquet": "^3.4.13",
+    "@math.gl/core": "3.6.2",
+    "@types/keymirror": "^0.1.4",
+    "apache-arrow": "^4.0.0",
+    "classnames": "^2.5.1",
+    "d3-format": "^3.1.0",
+    "global": "^4.4.0",
+    "kepler.gl": "3.1.0-alpha.1",
+    "keymirror": "^0.1.1",
+    "prop-types": "^15.8.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-intl": "^7.0.4",
+    "react-markdown": "^9.0.1",
+    "react-redux": "^9.2.0",
+    "react-router": "^7.1.0",
+    "react-router-dom": "^7.0.2",
+    "react-router-redux": "^4.0.8",
+    "react-virtualized": "^9.22.5",
+    "redux": "^5.0.1",
+    "redux-actions": "^3.0.3",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^3.1.0",
+    "ws": "^8.14.2"
   },
   "devDependencies": {
     "@commitlint/cli": "19.6.1",
     "@eslint/js": "9.17.0",
     "@tailwindcss/forms": "0.5.9",
-    "@types/react": "19.0.2",
-    "@types/react-dom": "19.0.2",
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.2.25",
+    "@types/react-dom": "18.2.0",
     "@vitejs/plugin-react": "4.3.4",
     "autoprefixer": "10.4.20",
     "eslint": "9.17.0",
@@ -63,5 +99,18 @@
     "typescript-eslint": "8.18.1",
     "vite": "6.0.5",
     "vite-preset-react": "2.3.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "@loaders.gl/core": "3.4.13",
+      "@loaders.gl/images": "3.4.13",
+      "@deck.gl/core": "8.9.27",
+      "@deck.gl/extensions": "8.9.27",
+      "@luma.gl/core": "8.5.21",
+      "@luma.gl/webgl": "8.5.21",
+      "react": "18.2.0",
+      "react-dom": "18.2.0",
+      "vite": "6.0.5"
+    }
   }
 }
