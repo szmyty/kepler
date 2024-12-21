@@ -1,9 +1,15 @@
 import { defineConfig } from "vite";
 import { resolve } from "path";
 import react from "@vitejs/plugin-react";
+import fixReactVirtualized from 'esbuild-plugin-react-virtualized'
 
 export default defineConfig(() => {
   return {
+    optimizeDeps: {
+      esbuildOptions: {
+        plugins: [fixReactVirtualized],
+      },
+    },
     plugins: [
       react(
         { 

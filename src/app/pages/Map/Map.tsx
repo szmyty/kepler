@@ -1,4 +1,4 @@
-import KeplerGl from "kepler.gl";
+import KeplerGl from "@kepler.gl/components";
 
 const Map = () => {
   return (
