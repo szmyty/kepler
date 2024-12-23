@@ -1,10 +1,11 @@
 /**
  * Home Page Component
- * - Combines the AppBar, MainContainer, and Footer to render the home page.
+ * - Combines the AppBar, Map, and Footer to render the home page.
  */
 import AppBar from "../../components/AppBar";
 import Footer from "../../components/Footer";
 import MainContainer from "../../components/MainContainer";
+import Map from "../../components/Map";
 import { Box } from "@mui/material";
 import { HomeProps } from "./Home.types";
 
@@ -20,7 +21,9 @@ const Home: React.FC<HomeProps> = ({ ...props }) => {
       }}
     >
       <AppBar />
-      <MainContainer />
+      <MainContainer>
+        <Map />
+      </MainContainer>
       <Footer />
     </Box>
   );
