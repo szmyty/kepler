@@ -61,6 +61,7 @@
     "@mui/material": "^6.3.0",
     "@reduxjs/toolkit": "^2.5.0",
     "@types/keymirror": "^0.1.4",
+    "@uidotdev/usehooks": "^2.4.1",
     "apache-arrow": "^4.0.0",
     "classnames": "^2.5.1",
     "d3-format": "^3.1.0",

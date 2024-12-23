@@ -7,9 +7,12 @@
 import KeplerGl from "@kepler.gl/components";
 import { Box } from "@mui/material";
 import { MapProps } from "./Map.types";
+import { useWindowSize } from "@uidotdev/usehooks";
 
 const Map: React.FC<MapProps> = ({ ...props }) => {
   const mapboxToken = import.meta.env.VITE_MAPBOX_API_TOKEN || "";
+  const { width, height } = useWindowSize();
+
   return (
     <Box
       {...props}
@@ -21,9 +24,9 @@ const Map: React.FC<MapProps> = ({ ...props }) => {
     >
       <KeplerGl
         id="kepler-map"
-        width={window.innerWidth}
-        height={window.innerHeight}
-        mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_API_TOKEN || ""}
+        width={width}
+        height={height}
+        mapboxApiAccessToken={mapboxToken}
         logoPosition={null} // Removes Kepler.gl logo
       />
     </Box>

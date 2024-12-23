@@ -2,7 +2,7 @@
  * MainContainer Component
  * - Displays the main content area of the application.
  */
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import { MainContainerProps } from "./MainContainer.types";
 
 const MainContainer: React.FC<MainContainerProps> = ({ children, ...props }) => {
@@ -11,11 +11,10 @@ const MainContainer: React.FC<MainContainerProps> = ({ children, ...props }) => 
       {...props}
       sx={{
         flexGrow: 1,
-        padding: "20px",
+        padding: "0px",
         ...props.sx,
       }}
     >
-      <Typography variant="body1">I am body</Typography>
       {children}
     </Box>
   );
