@@ -1,27 +1,11 @@
 /**
  * App Component
- * - Defines application routes and assigns layouts to each route.
+ * - Uses the Router component to define the application's routing structure.
  */
-import { Routes, Route } from "react-router-dom";
-// import Layout from "../../components/Layout";
-// import MainContainer from "../../components/MainContainer";
-// import MapContainer from "../../components/MapContainer";
-// import NotFound from "../../components/NotFound";
-import { routes } from "../routes";
-import Box from "@mui/material/Box";
+import Router from "../Router";
 
 const App: React.FC = () => {
-  return (
-    <Routes>
-      {/* Layout with shared UI (AppBar, Footer) */}
-      {/* <Route path={routes.home} element={<Layout />}>
-        <Route index element={<MainContainer><MapContainer /></MainContainer>} />
-      </Route> */}
-
-      {/* Not Found Route */}
-      <Route path={routes.notFound} element={<Box>Hi</Box>} />
-    </Routes>
-  );
+  return <Router />;
 };
 
 export default App;
