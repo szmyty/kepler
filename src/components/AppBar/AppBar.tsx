@@ -9,7 +9,7 @@ const AppBar: React.FC<AppBarProps> = ({ ...props }) => {
   return (
     <MuiAppBar position="static" sx={{ flexShrink: 0, ...props.sx }}>
       <Toolbar>
-        <Typography variant="h6">I am header</Typography>
+        <Typography variant="h6">AppBar</Typography>
       </Toolbar>
     </MuiAppBar>
   );
