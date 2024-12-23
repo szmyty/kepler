@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    overflow: hidden; /* Prevent scrolling */
+    font-family: 'Inter', sans-serif; /* Optional: Ensure a modern font */
+    background-color: #f9f9f9; /* Optional: Set a default background */
+}
+
+/* Root Element */
+#root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    display: flex; /* Enable flexbox for layout components */
+    flex-direction: column;
+}

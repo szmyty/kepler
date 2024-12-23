@@ -1,11 +1,8 @@
 /**
- * Centralized route definitions for the application.
- *
- * - Provides a single source of truth for route paths.
+ * Route definitions for the application.
+ * - Provides a single source of truth for all routes.
  */
-
 export const routes = {
-    home: '/',
-    notFound: '*',
+    home: "/",
+    notFound: "*",
 };
-  
