@@ -12,14 +12,21 @@ export default defineConfig(() => {
     },
     plugins: [
       react(
-        { 
-          removeDevtoolsInProd: false,
-          injectReact: true 
+        {
+          jsxImportSource: "react",
+          jsxRuntime: "automatic",
         }
       )
     ],
+    publicDir: "public",
     server: {
       port: 3000,
+      host: true,
+      strictPort: true, 
+      cors: true,
+      headers: {
+        "Access-Control-Allow-Origin": "*", // Allow all origins
+      },
     },
     resolve: {
       alias: {
